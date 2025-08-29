@@ -1,0 +1,12 @@
+executable = run_training_CH_classification.sh
+arguments = $(ClusterId) 8 1 10000
+output = terminal_print/output.$(ClusterId).$(ProcId).out
+error = error/error.$(ClusterId).$(ProcId).out
+log = log/log.$(ClusterId).$(ProcId).out
++JobFlavour = "tomorrow"
+request_GPUs = 1
+request_CPUs = 8
+stream_output = True
+stream_error = True
+queue 
+

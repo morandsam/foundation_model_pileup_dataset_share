@@ -1,0 +1,10 @@
+executable = create_ht5.sh
+arguments = 1 $(ProcId)
+# arguments = 0 5
+output = terminal_print/output.$(ClusterId).$(ProcId).out
+error = error/error.$(ClusterId).$(ProcId).out
+log = log/log.$(ClusterId).$(ProcId).out
++JobFlavour = "espresso"
+# request_CPUs = 1
+queue 4
+

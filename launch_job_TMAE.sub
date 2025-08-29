@@ -1,0 +1,12 @@
+executable = run_training_TMAE.sh
+arguments = $(ClusterId) 1 8
+output = terminal_print/output.$(ClusterId).$(ProcId).out
+error = error/error.$(ClusterId).$(ProcId).out
+log = log/log.$(ClusterId).$(ProcId).out
++JobFlavour = "tomorrow"
+request_GPUs = 1
+request_CPUs = 8
+stream_output = True
+stream_error = True
+queue
+
